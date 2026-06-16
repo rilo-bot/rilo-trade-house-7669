@@ -40,7 +40,7 @@ export function HeaderUserNav() {
   if (!data?.user) {
     // Single auth entry point — the signup page links to sign-in for returnees.
     return (
-      <Button asChild size="sm">
+      <Button asChild size="sm" className="bg-[hsl(142,60%,45%)] hover:bg-[hsl(142,60%,38%)] text-white border-transparent">
         <Link href="/auth/signup">Sign up</Link>
       </Button>
     );
